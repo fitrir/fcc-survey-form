@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width", initial-scale="1.0">
+      
+      <title>Survey Form</title>
+      
+      <!-- CSS Reset -->
+      <link href="resources/css/reset.css" rel="stylesheet" type="text/css" />
+      
+      <!-- Bootstrap Core CSS -->
+      <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      
+      <!-- Custom CSS -->
+      <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+      
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Notable|Roboto" rel="stylesheet">
+    </head>
+  
+  
+  <body>
+    <h1 id="title" class="text-center font-weight-bold">Customer Service Survey</h1>
+    
+    <main>
+      <p id="description" class="text-center font-weight-bold">Tell us what you think about our service</p>
+      <p id="error"></p>
+      
+      <form id="survey-form" class="mt-5">
+        <div class="row mx-0">
+          <label for="name" id="name-label" class="col-md-6 text-right">* Name:</label>
+        <input type="text" id="name" required class="col-md-6" placeholder="Enter your name" />
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="email" id="email-label" class="col-md-6 text-right">* Email:</label>
+          <input type="email" id="email" required class="col-md-6" placeholder="Enter your email" />
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="age" id="number-label" class="col-md-6 text-right">* Age:</label>
+          <input type="number" id="number" min="25" max="60" required class="col-md-6" placeholder="Enter your age" />
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="source" id="dropdown-label" class="col-md-6 text-right">How do you know about our service?</label>
+          <select id="dropdown" class="col-md-6">
+            <option value="website">Website</option>
+            <option value="social media">Social media</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="newspaper">Newspaper</option>
+            <option value="radio">Radio</option>
+          </select>
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="quality" id="quality" class="col-md-6 text-right">Overall, how would you rate the quality of your customer service experience?</label>
+          <div class="radio-input col-md-6 mt-2">
+            <input type="radio" name="quality" value="positive" class="mr-1" />Positive
+            <input type="radio" name="quality" value="negative" class="mr-1 ml-3" />Negative
+            <input type="radio" name="quality" value="neutral" class="mr-1 ml-3" />Neutral
+          </div>
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="understand" id="understand" class="col-md-6 text-right">How well did we understand your questions and concerns?</label>
+          <div class="radio-input col-md-6">
+            <input type="radio" name="understand" value="very well" class="mb-2 mr-2" />Very well<br />
+            <input type="radio" name="understand" value="somewhat well" class="mb-2 mr-2" />Somewhat well<br />
+            <input type="radio" name="understand" value="not so well" class="mb-2 mr-2" />Not so well
+          </div>
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="like" id="like" class="col-md-6 text-right">What do you like most about our service?<br />
+          (Check all that apply)
+          </label>
+          <div class="checkbox-input col-md-6">
+            <input type="checkbox" name="like" value="very well" class="mb-2 mr-2" />Friendly staffs<br />
+            <input type="checkbox" name="like" value="somewhat well" class="mb-2 mr-2" />Strategic location<br />
+            <input type="checkbox" name="like" value="not so well" class="mb-2 mr-2" />Fast service<br />
+            <input type="checkbox" name="like" value="not so well" class="mb-2 mr-2" />Affordable price<br />
+            <input type="checkbox" name="like" value="not so well" class="mb-2 mr-2" />Community supports<br />
+            <input type="checkbox" name="like" value="not so well" class="mb-2 mr-2" />Other<br />
+          </div>
+        </div>
+        
+        <div class="row mt-4 mx-0">
+          <label for="comment" id="comment-label" class="col-md-6 text-right">Any comments or suggestions?</label>
+          <textarea rows="4" id="comment" class="col-md-6" placeholder="Enter your comment here"></textarea>
+        </div>
+        
+        <button type="submit" id="submit" class="mt-5 d-block mx-auto bg-dark text-white px-3 py-2">Submit</button>
+      </form>
+    </main>
+    
+    <footer class="d-flex justify-content-between bg-dark text-white py-4 px-5">
+      <p class="mb-0">Designed by Fitri Rahayu</p>
+      <p class="mb-0">Picture by <a href="https://unsplash.com/@vessilli?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" >Mohammad Saifullah</a></p>
+    </footer>
+  </body>
+</html>

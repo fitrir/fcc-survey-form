@@ -1,0 +1,50 @@
+/* Universal Style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;;
+  font-size: .9rem;
+  margin-top: 3rem;
+  background: url(../images/mohammad-saifullah-627721-unsplash.jpg) fixed 80% 50%;
+}
+
+h1 {
+  font-family: 'Notable', sans-serif;
+  opacity: .9;
+}
+
+a {
+  color: lightblue;
+}
+
+a:hover {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+main {
+  background-color: rgba(232, 235, 239, .8);
+  margin: 3rem 15rem;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+}
+
+form input, select, textarea, select option {
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  border: none;
+}
+
+footer {
+  font-size: .8rem;
+}
+
+#description {
+  font-size: 1.1rem;
+}
